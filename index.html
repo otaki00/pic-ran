@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="app">
+        <header>
+            <div class="container">
+                <h1>welcome to pic-ran <i class="fa-solid fa-fire-flame-curved"></i></h1>
+                <nav>
+                    <ul id="nav-list">
+                        <li>
+                            <button id="random-pic" class="add-effect nav-item active">Random <i
+                                    class="fa-regular fa-face-grimace"></i></button>
+                        </li>
+                        <li>
+                            <button id="grayscale-pic" class="nav-item add-effect ">Grayscale <i
+                                    class="fa-regular fa-face-grin-hearts"></i></button>
+                        </li>
+                        <li>
+                            <button id="blur-pic" class="nav-item add-effect ">Blur <i class="fa-regular fa-face-dizzy"></i></button>
+                        </li>
+                    </ul>
+                </nav>
+                <button id="display-overlay" class="add-effect">more about image</button>
+            </div>
+        
+        </header>
+        
+        <img id="image" class="animate__animated animate__bounceInUp" src="https://picsum.photos/id/237/450/350" alt="random">
+        
+        <div class="overlay" id="layer">
+            
+        </div>
+        <div class="image-info-container overlay" id="overlay container">
+            <i class="fa-regular fa-circle-xmark" id="close-overlay"></i>
+            <img id="secImage" src="https://picsum.photos/250/250" alt="">
+            <div class="info-items">
+                <h2 >Author <a href="#" target="_blank" id="author"></a></h2>
+                <a id="downloadBtn" class="add-effect" href="" target="_blank" download="image.png">Download Image</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
